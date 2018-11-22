@@ -10,7 +10,7 @@ $("#menu1").click(function(){
 		}else{
 			$('.nav').css("display","none")
 			$(".nav").animate({opacity:'0'},'slow')
-			$("#logo").animate({marginLeft:'40%'},'slow')
+			$("#logo").animate({marginLeft:'43%'},'slow')
 
 		}
 
