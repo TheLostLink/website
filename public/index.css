@@ -335,10 +335,11 @@ section{
 .fasCaret{
 	position: absolute;
 	left: 48%;
-	top: 78%
+	top: 68%
 }
 
 #about{
+	position: relative;
 	height:55%;
 	display: block
 
@@ -358,6 +359,12 @@ line-height: 160%;
 text-align:justify;
 font-family: 'Open Sans Condensed', sans-serif
 
+}
+
+.fasCaretAbout{
+	position: absolute;
+	left: 48%;
+	top: 78%
 }
 
 h1{
@@ -397,6 +404,12 @@ h1{
 	font-family: 'Abril Fatface', cursive;
 }
 
+.fasCaretLearn{
+	position: absolute;
+	left: 48%;
+	top: 80%
+}
+
 #codeBlockchain{
 	position: relative;
 	height:55vw;
@@ -431,6 +444,12 @@ h1{
 	top: 40%;
 	font-size: 5rem; 
 	font-family: 'Abril Fatface', cursive;
+}
+
+.fasCaretCode{
+	position: absolute;
+	left: 48%;
+	top: 80%
 }
 
 
