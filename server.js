@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path'); 
 var app = express();
-var ejs = require('ejs');
+
 
 
 
@@ -9,7 +9,7 @@ var ejs = require('ejs');
 var port = process.env.PORT || 8080;
 
 
-//app.set('views', path.join(__dirname, 'public'));
+app.set('views', path.join(__dirname, 'public'));
 
 //app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/public"));
