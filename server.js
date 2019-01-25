@@ -1,6 +1,9 @@
 var express = require('express');
 var path = require('path'); 
 var app = express();
+var engines = require('consolidate');
+
+app.engine('html', engines.mustache);
 
 
 
