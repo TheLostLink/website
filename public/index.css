@@ -208,6 +208,7 @@ white-space: nowrap;
 }
 a{
 	border-bottom:0.5px white ridge;
+	color: black;
 
 }
 
@@ -341,25 +342,92 @@ section{
 #about{
 	position: relative;
 	height:55%;
-	display: block
+	display: block;
+		
+	background-size:     100%;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+  
 
+}
+
+
+.anim{
+	-webkit-animation-name: nodefadein;
+          animation-name: nodefadein;
+          -webkit-animation-timing-function: linear;
+                  animation-timing-function: linear;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+}
+
+.animr{
+	-webkit-animation-name: nodefadein;
+          animation-name: nodefadein;
+          animation-direction:reverse;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+@-webkit-keyframes nodefadein {
+  0%   {background-image: radial-gradient(rgba(255,255,255,1)0%, rgba(255,255,255,1)10%, rgba(255,255,255,1)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  10%  {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,1)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  20%  {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  30% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  40% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  50% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+
+  
+  100% {background-image: radial-gradient(circle at center ,rgba(255,255,255,0)0%, rgba(255,255,255,)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+}
+
+@keyframes nodefadein {
+  0%   {background-image: radial-gradient(rgba(255,255,255,1)0%, rgba(255,255,255,1)10%, rgba(255,255,255,1)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  10%  {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,1)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  20%  {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,1)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  30% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,1)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  40% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  50% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
+  
+  
+  100% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
 }
 
 .chainImg{
-	width: 60%;
+	width: 90%;
 	height:40px;
-	padding: 4% 20%;
+	padding: 4% 5%;
 
 }
+.back{background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
+  	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg);
+}
+
 
 .aboutText{
-padding: 0% 10%;
+padding: 11% 10% 15% 10%;
 font-size: 2em;
 line-height: 160%;
 text-align:justify;
 font-family: 'Open Sans Condensed', sans-serif
 
 }
+
+
 
 .fasCaretAbout{
 	position: absolute;

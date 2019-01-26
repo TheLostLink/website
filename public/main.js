@@ -57,12 +57,45 @@ $("#menu1").click(function(){
  })
 
 
+ $(".fasCaretAbout").hover(function(){
+ 
+  
+ $('.fasCaretAbout').css("transform", 'scale(1.5,1.5)');
 
 
+ },function(){
+ 	
+ 	 $('.fasCaretAbout').css("transform", 'scale(1,1)');
+ })
 
 
+ $(".fasCaretAbout").click(function(){
 
+ $(".aboutText").animate({opacity: '0'},1000);
 
+setTimeout(function(){
+	$('#about').addClass("back");
+},1000)
+ $('#about').addClass("anim");
 
+ 
+setTimeout(function(){
+ 	$('html, body').animate({
+    scrollTop: ($('#codeID').offset().top)
+},400);
+ },1500)
+ 	setTimeout(function(){
+	$('#about').removeClass("back");
+ 	$('#about').removeClass("anim");
+ 	$('.fasCaretAbout').css("transform", 'scale(1,1)');
+ 	$(".aboutText").css('opacity','1');
+},1900)
+})
+
+$(".fasCaret").click(function(){
+$('html, body').animate({
+    scrollTop: ($('#aboutID').offset().top)
+},200);
+})
 
 })
