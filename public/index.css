@@ -1,46 +1,28 @@
 @import url('./reset.css');
 @import url('./media.css');
-/*color scheme
-
-#CC99CC purple
-#660066 dark purple
-#000000 black
-#FFFFFF white
-*/
-
-body{
-
-	
-}
-
 
 *:focus {outline:none !important}
 
+
+
+
+/*HEADER*/
+
 #top{
-width:100%;
-position:absolute;
-
-
-
+    width:100%;
+    position:absolute;
 }
 
 #topPic{
 	height: 10%;
 	position: relative;
 	padding-bottom: 50px;
-
-
 }
 
 .topLogo{
-
-
 	top: 30px;
-	
 	margin: 0 47%;
 	background-color: black;
-
-	
 }
 
 #topLogo{
@@ -48,12 +30,9 @@ position:absolute;
 	position: relative;
 	margin-top: 3%;
 	width: 5%;
-	
 	flex-direction:row;
 	transition: all 1s ease-in-out;
      cursor: pointer;
-     
-     
      opacity: 1;
     /*Transition*/
      -webkit-transition: all 0.5s ease;
@@ -76,27 +55,16 @@ position:absolute;
 	z-index: 5;
 }
 
-
-
 header{
 	position: absolute;
 	background-color: white;
-		display: flex;
+	display: flex;
 	flex-direction:row;
 	border-bottom:0.5px #D9EDF6 ridge;
 	align-items: center;
 	width: 100%;
 	height: 50px;
-	
-	
-	
-
-	
 }
-
-
-
-
 
 #logo{
 	display:flex;
@@ -105,8 +73,6 @@ header{
 	text-align: center;
 	margin-left: 43%;
 	flex-direction:row;
-
-	/*width: 20%*/
 }
 
 .logoImg{
@@ -120,8 +86,6 @@ header{
 	flex-direction:row;
 	transition: all 1s ease-in-out;
      cursor: pointer;
-     
-     
      opacity: 1;
     /*Transition*/
      -webkit-transition: all 0.5s ease;
@@ -134,13 +98,13 @@ header{
 
 }
 #logoType{
- font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', cursive;
     margin-left: 10px;
 	font-size: 3vw;
 	flex-direction:row;
 	white-space: nowrap;
-	   opacity: 1;
-	   line-height: 0.8;
+	opacity: 1;
+	line-height: 0.8;
     /*Transition*/
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -153,13 +117,10 @@ header{
 
 .foot{
 	text-align: center;
-
 }
 
 .footer{
-
 	display: inline-block;
-
 }
 
 .fas{
@@ -168,10 +129,9 @@ header{
 }
 
 
-/*nav*/
+/*NAVIGATION MENU*/
 
 nav{
-	
 	margin-right:0;
 	width: 70%;
 	flex-direction:row;
@@ -180,7 +140,8 @@ nav{
 
 }
 
-ul{display: flex;
+ul{
+	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	text-decoration:none;
@@ -192,24 +153,20 @@ ul{display: flex;
 
 li{
 	padding-right: 0px;
-	 margin-right:0;
+	margin-right:0;
 	margin-left:20px;
-
 	box-sizing:border-box;
-font-family: 'Open Sans Condensed', sans-serif;
-
-font-size: 2vw;
-white-space: nowrap;
-
-	
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2vw;
+    white-space: nowrap;
 	list-style-type: none;
-	;
+	
 	
 }
+
 a{
 	border-bottom:0.5px white ridge;
 	color: black;
-
 }
 
 footer p{
@@ -218,7 +175,9 @@ footer p{
 
 
 }
-.dropdown:hover .dropDown{display: block;}
+.dropdown:hover .dropDown{
+	display: block;
+}
 
 .dropdown:hover .dropBtn{
 	background-color: #CAD3C2;
@@ -239,7 +198,6 @@ footer p{
     padding-left:3%;
     font-size:1vw;
     overflow: hidden;
-    
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     
@@ -251,7 +209,7 @@ footer p{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-     overflow: hidden;
+    overflow: hidden;
 }
 
 .menu{
@@ -259,10 +217,8 @@ footer p{
 	font-size: 2vw;
 	border-radius: 3px;
 	margin:1px;
-
-
-
 }
+
 .menu:hover {
 	cursor: pointer;
     box-shadow: 1px 1px 3px  rgba(0,0,0,0.24), 1px 1px 3px  rgba(0,0,0,0.19);}
@@ -287,13 +243,15 @@ form{
 	
 	display:inline-block;
 }
+
 input{
 	line-height:29px; 
 	vertical-align: middle;
 	align-items: center;
 }
+
 .inMenu{
- overflow: hidden;
+    overflow: hidden;
 }
 
 .inMenu:hover{
@@ -313,13 +271,12 @@ section{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/*first section*/
+/*COVER SECTION*/
 
 #cover{
 	position:relative;
 	transition: linear all 0.2s;
-	
-		background-image: url(./images/peeps.png);
+	background-image: url(./images/peeps.png);
 	background-size:     100%;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center; 
@@ -330,21 +287,21 @@ section{
 }
 
 #coverHeading{
-text-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .fasCaret{
 	position: absolute;
 	left: 48%;
 	top: 68%;
-
 }
+
+/*ABOUT SECTION*/
 
 #about{
 	position: relative;
 	height:55%;
 	display: block;
-		
 	background-size:     100%;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
@@ -356,11 +313,11 @@ text-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 .anim{
 	-webkit-animation-name: nodefadein;
           animation-name: nodefadein;
-          -webkit-animation-timing-function: linear;
-                  animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-            transition: ease;
+          animation-duration: 2s;
+          transition: ease;
 }
 
 
@@ -378,8 +335,6 @@ text-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
   50% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
   	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
-
-  
   100% {background-image: radial-gradient(circle at center ,rgba(255,255,255,0)0%, rgba(255,255,255,)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
   	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
 }
@@ -397,33 +352,22 @@ text-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   	rgba(255,255,255,0)40%, rgba(255,255,255,1)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
   50% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
   	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
-  
-  
   100% {background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
   	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg)}
 }
 
-.chainImg{
-	width: 90%;
-	height:40px;
-	padding: 4% 5%;
-
-}
 .back{background-image: radial-gradient(rgba(255,255,255,0)0%, rgba(255,255,255,0)10%, rgba(255,255,255,0)20%, rgba(255,255,255,0)30%, 
   	rgba(255,255,255,0)40%, rgba(255,255,255,0)50%, rgba(255,255,255,1)60%, rgba(255,255,255,1)70%, rgba(255,255,255,1)80%, rgba(255,255,255,1)90%, rgba(255,255 ,255,1)100%),url(./images/node.jpg);
 }
 
 
 .aboutText{
-padding: 11% 10% 15% 10%;
-font-size: 2em;
-line-height: 160%;
-text-align:justify;
-font-family: 'Open Sans Condensed', sans-serif
-
+    padding: 11% 10% 15% 10%;
+    font-size: 2em;
+    line-height: 160%;
+    text-align:justify;
+    font-family: 'Open Sans Condensed', sans-serif
 }
-
-
 
 .fasCaretAbout{
 	position: absolute;
@@ -433,8 +377,10 @@ font-family: 'Open Sans Condensed', sans-serif
 	transition: ease;
 }
 
+
+
+/*LEARN TO CODE SECTION*/
 h1{
-	
 	font-size: 6rem;
 	text-align: center;
 	padding-top: 10%;
@@ -442,71 +388,59 @@ h1{
 	font-weight: bold;
 	color: black;
 	line-height: 150%;
-	
 }
 
 #learnContainer{
-
 	text-align: center;
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #learnToCode{
 	display: flex;
 	flex-direction: row;
-
 	position: relative;
 	height:55vw;
 	width: 100%;
-	
 	background-color: #CAD3C2;
 	overflow: hidden;
 	
 
 }
-.learnToCodePic.goRight{
--webkit-animation-name: goRight;
-          animation-name: goRight;
-         -webkit-animation-timing-function: linear;
-                  animation-timing-function: linear;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
 
-	
+.learnToCodePic.goRight{
+    -webkit-animation-name: goRight;
+       animation-name: goRight;
+    -webkit-animation-timing-function: linear;
+       animation-timing-function: linear;
+    -webkit-animation-duration: 3s;
+       animation-duration: 3s;
 }
 
 .learnToCodePic{
-	position: relative;
-	display: inline-block;
+	    position: relative;
+	    display: inline-block;
 		height:55vw;
 		left : -100%;
 		transition: ease;
 		transition-duration: 1s;
-		 
-
-
 }
-
-
-
 
 @-webkit-keyframes goRight{
 
-0%     { left : -50%;};
-100%     { left : 0%;};
+    0%     { left : -50%;};
+    100%     { left : 0%;};
 };
 
 @keyframes goRight{
 
-0%     { left : -50%;};
-100%     { left : 0%;};
+    0%     { left : -50%;};
+    100%     { left : 0%;};
 }
 
 #learnTitle{
 	z-index: 3;
 	padding-top: 35%;
-	
 	display: block;
 	top: 40%;
 	font-size: 5rem; 
@@ -528,27 +462,25 @@ height: 100%;
 	height:0%; 
 	opacity:0;
 	visibility: hidden;
-	
-margin:0 12%;
-line-height: 120%;
-top: 40%;
-text-align:justify;
-transition: ease;
-transition-duration: 3s;
+    margin:0 12%;
+    line-height: 120%;
+    top: 40%;
+    text-align:justify;
+    transition: ease;
+    transition-duration: 3s;
 }
 
 .button {
-  background-color: white; 
-  border: none;
-  color: black;
-
-  padding: 5px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  font-family: 'Open Sans Condensed', sans-serif
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: 'Open Sans Condensed', sans-serif
 }
 
 .button:hover{
@@ -565,69 +497,63 @@ transition-duration: 3s;
 	
 }
 
-#codeBlockchain{
-		display: flex;
-	flex-direction: row;
 
-	
+/*LEARN TO CODE BLOKCHAIN SECTION*/
+
+#codeBlockchain{
+	display: flex;
+	flex-direction: row;
 	position: relative;
 	height:55vw;
 	width: 100%;
-	
 	overflow: hidden;
-	
-	
-
 }
+
 #codeContainer{
 
 	text-align: center;
-width: 60.7%;
-height: 100%;
+    width: 60.7%;
+    height: 100%;
 }
 
 #codeBlockchainPic{
 	position: absolute;
 	display: inline-block;
-		height:55vw; 
-		right: 0px;
-		transition: ease;
-		transition-duration: 1s;
+	height:55vw; 
+	right: 0px;
+	transition: ease;
+	transition-duration: 1s;
 }
+
 #codePic{
 	position: absolute;
 	display: inline-block;
-		height:55vw; 
-		right: 0px;
-		width:39.3%;
-		opacity: 0.5;
-		transition: ease;
-		transition-duration: 1s;
+	height:55vw; 
+	right: 0px;
+	width:39.3%;
+	opacity: 0.5;
+	transition: ease;
+	transition-duration: 1s;
 }
 
 #codeContent{
 	height:0%; 
 	opacity:0;
 	visibility: hidden;
-	
-margin:0 12%;
-line-height: 120%;
-top: 40%;
-text-align:justify;
-display: block;
-transition: ease;
-	transition-duration: 3s;
-
+    margin:0 12%;
+    line-height: 120%;    
+    top: 40%;
+    text-align:justify;
+    display: block;
+    transition: ease;
+    transition-duration: 3s;
 }
 
 
 #codeTitle{
 	z-index: 3;
-	
 	display: block;
 	padding-top: 35%;
-	
-	
 	font-size: 5rem; 
 	font-family: 'Abril Fatface', cursive;
 	text-shadow:  1px 2px rgba(0,0,0,0.2);
@@ -652,10 +578,6 @@ transition: ease;
 	
 }
 
-.goRight{
 
-
-
-}
 
 
