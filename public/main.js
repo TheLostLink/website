@@ -1,4 +1,13 @@
+
+
+let toggle=0;
+
 $(document).ready(function(){
+
+
+
+
+
 
 
 $("#menu1").click(function(){
@@ -41,11 +50,14 @@ $("#menu1").click(function(){
 })
 
 
+
+/*TITLW PAGE*/
  $(".fasCaret").hover(function(){
 
  $('#cover').css("background-size", '105%');
  $('.fasCaret').css("color", 'white');
  $('.coverHeading').css("color", 'white');
+
  $('#cover').css("background-image", "linear-gradient(rgba(0,0,0,.5), rgba(0,0 ,0,.5)), url(./images/peeps.png)");
 
  },function(){
@@ -61,13 +73,16 @@ $("#menu1").click(function(){
  
   
  $('.fasCaretAbout').css("transform", 'scale(1.5,1.5)');
+ $('.fasCaretAbout').css("opacity", '1');
 
 
  },function(){
  	
  	 $('.fasCaretAbout').css("transform", 'scale(1,1)');
+ 	  $('.fasCaretAbout').css("opacity", '0.5');
  })
 
+/*ABOUT PAGE*/
 
  $(".fasCaretAbout").click(function(){
 
@@ -98,4 +113,133 @@ $('html, body').animate({
 },200);
 })
 
+/* LEARN TO CODE*/
+ $(".fasCaretLearn").hover(function(){
+ 
+  
+ $('.fasCaretLearn').css("transform", 'scale(1.5,1.5)');
+ $('.fasCaretLearn').css("opacity", '1');
+
+ },function(){
+ 	
+ 	 $('.fasCaretLearn').css("transform", 'scale(1,1)');
+ 	 $('.fasCaretLearn').css("opacity", '0.5');
+ })
+
+ $(".fasCaretLearn").click(function(){
+ 	$('html, body').animate({
+    scrollTop: ($('#blockID').offset().top)
+},400);
 })
+
+ $("#learnButton").on('click',function(){
+
+if(toggle==0){
+$('#learnTitle').css('padding-top','10%');
+$('#learnContent').css('height','auto');
+$('#learnContent').css('opacity','1');
+$('#learnContent').css('visibility','visible');
+$('#learnButton').text('Hide')
+
+toggle=1;
+}else{
+	$('#learnContent').css('opacity','0');
+	setTimeout(function(){
+$('#learnTitle').css('padding-top','35%');
+$('#learnContent').css('height','0%');
+$('#learnContent').css('visibility','hidden');
+$('#learnButton').text('Learn More')
+},1000)
+toggle=0;
+}
+
+ })
+
+//CHECK AN ELEMENT IS WITHIN VIEW AND THEN EXECUTE ANIMATION
+$(window).scroll(function(){
+ if ($(window).scrollTop() > 1400 || $(window).scrollTop() < 1600) 
+ {
+ 	console.log('hiiiii')
+  $("#learnToCodePic").css("left","0%");
+  $('#learnTitle').css("color","black")
+ }
+
+  if ($(window).scrollTop() < 1000 || $(window).scrollTop() > 1800) 
+ {
+ 	console.log('biiiii')
+ $("#learnToCodePic").css("left","-100%");
+ $('#learnTitle').css("color","#CAD3C2")
+ }
+
+ });
+
+
+
+
+
+/* LEARN TO CODE BLOCKCHAIN*/
+ $(".fasCaretCode").hover(function(){
+ 
+  
+ $('.fasCaretCode').css("transform", 'scale(1.5,1.5)');
+ $('.fasCaretCode').css("opacity", '1');
+
+ },function(){
+ 	
+ 	 $('.fasCaretCode').css("transform", 'scale(1,1)');
+ 	  $('.fasCaretCode').css("opacity", '0.5');
+ })
+
+  $("#blockLearnButton").on('click',function(){
+
+if(toggle==0){
+$('#codeTitle').css('padding-top','10%');
+$('#codeContent').css('height','auto');
+$('#codeContent').css('opacity','1');
+$('#codeContent').css('visibility','visible');
+$('#blockLearnButton').text('Hide')
+
+toggle=1;
+}else{
+	$('#codeContent').css('opacity','0');
+	setTimeout(function(){
+$('#codeTitle').css('padding-top','35%');
+$('#codeContent').css('height','0%');
+$('#codeContent').css('visibility','hidden');
+$('#blockLearnButton').text('Learn More')
+},1000)
+toggle=0;
+}
+
+ })
+
+
+//CHECK AN ELEMENT IS WITHIN VIEW AND THEN EXECUTE ANIMATION
+$(window).scroll(function(){
+ if ($(window).scrollTop() > 1800) 
+ {
+ 	console.log('hiiiii')
+  $("#codeBlockchainPic").css("right","0%");
+  $("#codePic").css("right","0%");
+  $('#codeTitle').css("color","black")
+ }
+
+  if ($(window).scrollTop() < 1600) 
+ {
+ 	console.log('biiiii')
+ $("#codeBlockchainPic").css("right","-50%");
+  $("#codePic").css("right","-50%");
+  $('#codeTitle').css("color","white")
+ }
+
+ });
+
+
+
+//Button hover functions
+})
+
+
+
+
+
