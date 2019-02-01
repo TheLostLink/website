@@ -72,7 +72,7 @@ $(document).ready(function() {
   //Animate image then go to next section
   $(".fasCaretAbout").click(function() {
     $(".aboutText").animate({ opacity: "0" }, 1000);
-
+     $(".aboutWarning").animate({ opacity: "0" }, 1000);
     setTimeout(function() {
       $("#about").addClass("back");
     }, 1000);
@@ -91,6 +91,7 @@ $(document).ready(function() {
       $("#about").removeClass("anim");
       $(".fasCaretAbout").css("transform", "scale(1,1)");
       $(".aboutText").css("opacity", "1");
+      $(".aboutWarning").css("opacity", "1");
     }, 1900);
   });
 
@@ -220,4 +221,17 @@ $(document).ready(function() {
   });
 
   //Button hover functions
+
+
+  //BLOCKCHAIN PLATFORMS
+
+     $(".fasCaretCode").click(function() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#platformID").offset().top
+      },
+      400
+    );
+
+  })
 });

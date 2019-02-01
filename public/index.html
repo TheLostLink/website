@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lost Link Blog</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./main.js"></script>
@@ -44,27 +45,37 @@
         <a class="logoImg" href=""><img id="logoImg" src="./images/Thelostlink.png" alt="The lost link logo"></a>
         <p id="logoType">The Lost Link</p>
       </div>
-      <nav class="nav">
+     
+      <div id="menuButtons">
+        <button id="menu1" class="menu"><i class="fas fa-bars "></i></button>
+
+        <form action="">
+          <input id="searchInput" type="text">
+
+        </form>
+        <button id='search' class="menu"><i class="fas fa-search "></i></button>
+
+      </div>
+       <nav class="nav">
 
         <ul>
           <li>
             <div class="dropdown"><button class="dropBtn">Learn to code</button>
               <div class="dropDown">
-                <a class="inMenu" href="">Free Code Camp</a>
-                <a class="inMenu" href="">Free Code Camp</a>
-                <a class="inMenu" href="">Free Code Camp</a>
-                <a class="inMenu" href="">Free Code Camp</a>
-                <a class="inMenu" href="">Free Code Camp</a>
+                <a class="inMenu" href="">Fundamentals</a>
+                <a class="inMenu" href="">The Basics</a>
+                <a class="inMenu" href="">Courses and Platforms</a>
+                <a class="inMenu" href="">Languages</a>
               </div>
             </div>
           </li>
           <li>
             <div class="dropdown"><button class="dropBtn">Coding blockchains</button>
               <div class="dropDown">
-                <a class="inMenu" href="">Blockgeeks</a>
-                <a class="inMenu" href="">Blockgeeks</a>
-                <a class="inMenu" href="">Blockgeeks</a>
-                <a class="inMenu" href="">Blockgeeks</a>
+                <a class="inMenu" href="">Why Blockchain</a>
+                <a class="inMenu" href="">Resources</a>
+                <a class="inMenu" href="">Courses</a>
+                <a class="inMenu" href="">Social Media</a>
                 <a class="inMenu" href="">Blockgeeks</a>
               </div>
             </div>
@@ -72,16 +83,16 @@
           <li>
             <div class="dropdown"><button class="dropBtn">Blockchain platforms</button>
               <div class="dropDown">
-                <a class="inMenu" href="">Aion</a>
-                <a class="inMenu" href="">Aion</a>
-                <a class="inMenu" href="">Aion</a>
+                <a class="inMenu" href="">Sound Money</a>
+                <a class="inMenu" href="">Protocols</a>
+                <a class="inMenu" href="">dApps</a>
                 <a class="inMenu" href="">Aion</a>
                 <a class="inMenu" href="">Aion</a>
               </div>
             </div>
           </li>
           <li>
-            <div class="dropdown"><button class="dropBtn">Learn to code</button>
+            <div class="dropdown"><button class="dropBtn">Evertything else</button>
               <div class="dropDown">
                 <a class="inMenu" href="">Other</a>
                 <a class="inMenu" href="">Other</a>
@@ -93,16 +104,6 @@
           </li>
         </ul>
       </nav>
-      <div id="menuButtons">
-        <button id="menu1" class="menu"><i class="fas fa-bars "></i></button>
-
-        <form action="">
-          <input id="searchInput" type="text">
-
-        </form>
-        <button id='search' class="menu"><i class="fas fa-search "></i></button>
-
-      </div>
     </header>
   </div>
 
@@ -116,16 +117,15 @@
   <section id="about">
     <a id="aboutID" href=""></a>
 
-    <p class="aboutText">One year ago I decided I wanted to position myself for the future and start learning how to code. Shortly after, I found Crypto and Blockchain technology. I'm not sure if it was dumb luck or if it was meant to be but from that moment I knew there
-      was no way I could not possibly get involved. From then on I slowly transitioned from a six figure salary to the point now where I quit my job and am learning how to become a Blockchain Developer. I created this site to help others like myself find
-      information, learn and transition into a new career designing the next layer of the internet. This page is currently under construction but if you would like to find out more information as it becomes available please fill in your details.</p>
+    <p class="aboutWarning">WARNING: Before enbarking on this path you must first know that it will be a long ardous path. You will have times where it wont feel great, you will struggle, the computer screen will show incombrehesible clusters of letter and numbers. But after everytime time you stumble. YOU will have a better understanding of the concept. YOU will be one step closer to becoming a Blockchain Developer. Until one day YOU ARE A BLOCKCHAIN DEVELOPER</p>
+        <p class="aboutText">The concept of a Blockchain is relatively new in computer science. Just a little more than ten years ago Bitcoin did not even exist. With that, imagine trying to learn about something that does not yet exist. It requires imagination! Lucky for you with every month these new ecosystems and the development community within them are growing exponetially. This creates new material to learn from and on top of that an amazing opportunity to join welcoming communities and contribute to history. This website is an attempt to collect the material you will need, put in a easily accessible place and help you on your path to a new hobbie, career and future. It is set up in a way that even somebody with no computer knowledge will be directed to the right learning materials from start to finish ( You will soon learn as a developer there is no finish ). This is a dynamic website and is open to contiributions. Feel free to contact with  tips, links, suggestions and collaborations. Together we will grow this space. </p>
 
     <a id="aboutID" href=""></a>
     <i class=" fasCaretAbout fas fa-caret-down fa-4x"></i>
   </section>
   <section id="learnToCode">
     <a id="codeID" href=""></a>
-    <div>
+    <div id="codePicOL">
       <img id="learnToCodePic" class="learnToCodePic" src="./images/codeMan.jpg" alt="">
     </div>
     <div id="learnContainer">
@@ -133,10 +133,7 @@
         < Learn to code !>
       </h2>
 
-      <p id="learnContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur facilis delectus eligendi, ipsam est atque! Veniam, doloribus inventore quaerat natus odio accusantium cum delectus amet officiis nemo error vitae quasi, officia, est pariatur
-        voluptatibus ipsum, fugit laudantium repellat esse. Nesciunt, dignissimos magnam! Soluta cupiditate similique, nisi inventore repudiandae at tempora modi dolore, reprehenderit optio magni reiciendis excepturi quis totam tempore hic itaque numquam
-        adipisci accusantium non sint quasi porro aut eos. Facere fuga nihil veniam aliquam expedita dolores molestias distinctio ea aut quod possimus ab, ipsa nostrum voluptatem error nam, laudantium repellat obcaecati, et. Obcaecati aut magni numquam
-        inventore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius odit alias officiis debitis saepe quod distinctio assumenda veniam beatae, magni.</p>
+      <p id="learnContent">WHOA!!! Hold up. You want to go straight to the meaty stuff don't you? Before you can move straight into building Blockchain architecture and dApps you will need a foundation.  Building a solid foundation will only help cement you as the great developer you are going to be. If you have no coding experience it is essential you have a basic understanding of computer science principles like how a computer works, Binary and data, Algorithms and how the internet works. Then you can move on the fun with HTML, CSS and JavaScript. These are great as you begin your journey as they offer a fast visual feedback loop that will keep you interested enough to continue past the initial stumbling blocks.  </p>
 
       <button id="learnButton" class="button">Learn More</button>
     </div>
@@ -151,20 +148,42 @@
         < Code Blockchain !>
       </h2>
 
-      <p id="codeContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur facilis delectus eligendi, ipsam est atque! Veniam, doloribus inventore quaerat natus odio accusantium cum delectus amet officiis nemo error vitae quasi, officia, est pariatur
-        voluptatibus ipsum, fugit laudantium repellat esse. Nesciunt, dignissimos magnam! Soluta cupiditate similique, nisi inventore repudiandae at tempora modi dolore, reprehenderit optio magni reiciendis excepturi quis totam tempore hic itaque numquam
-        adipisci accusantium non sint quasi porro aut eos. Facere fuga nihil veniam aliquam expedita dolores molestias distinctio ea aut quod possimus ab, ipsa nostrum voluptatem error nam, laudantium repellat obcaecati, et. Obcaecati aut magni numquam
-        inventore!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius odit alias officiis debitis saepe quod distinctio assumenda veniam beatae, magni.</p>
+      <p id="codeContent">After learning the fundamentals of coding, how a computer operates and interacts with data and all the fun stuff inbetween the 1's  and 0's you can now sink your teeth into the juicy piece of meat that is Blockchain Technology. Start with the history of how we got here and then go through the all the resources and media to get you up to speed with the present day situation. There is constant content coming out very regularly so be sure to keep an eye out as this page grows and trims as the space progresses </p>
 
       <button id="blockLearnButton" class="button">Learn More</button>
 
     </div>
-    <div>
+    <div id="blockPicOL">
       <img id="codeBlockchainPic" src="./images/block.jpg" alt="">
       <img id="codePic" src="./images/code.jpg" alt="">
     </div>
 
     <i class=" fasCaretCode fas fa-caret-down fa-4x"></i>
+  </section>
+
+    <section id="platforms">
+    <a id="platformID" href=""></a>
+     <h2 id="platTitle">
+        Blockchain Platforms
+      </h2>
+    <div id="platBox1"></div>
+    <div id="platBox2">
+      <img src="./images/circle1.png" alt="">
+      <img src="./images/circle2.png" alt="">
+      <img src="./images/circle3.png" alt="">
+      <img src="./images/circle4.png" alt="">
+      <img src="./images/circle5.png" alt="">
+      
+    </div>
+    <div id="platBox3"></div>
+    <div id="platBox4"></div>
+    <div id="platBox5"></div>
+    <div id="platBox6"></div>
+    <div id="platBox7"></div>
+    <div id="platBox8"></div>
+    <div id="platBox9"></div>
+
+    <i class=" fasCaretPlatform fas fa-caret-down fa-4x"></i>
   </section>
 
   <footer>
