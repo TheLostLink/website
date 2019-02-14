@@ -24,6 +24,14 @@ app.get("/", function(req, res){
 })
 
 
+app.get("/login", function(req,res){
+
+res.sendFile(__dirname + './login/index.html')
+
+
+
+} )
+
 app.listen(port, function(){
 	console.log("app running");
 })
