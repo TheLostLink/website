@@ -24,9 +24,9 @@ app.get("/", function(req, res){
 })
 
 
-app.get("/login", function(req,res){
+app.post("/login", function(req,res){
 
-res.render("/login/index");
+res.json(path:__dirname + "login/index.html");
 
 
 
