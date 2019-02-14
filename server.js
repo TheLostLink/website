@@ -20,13 +20,13 @@ app.use(express.static(__dirname + "/public"));
 
 //routes
 app.get("/", function(req, res){
-	res.render("index");
+	res.json({path: __dirname + "login/index.html"});
 })
 
 
-app.get("login", function(req,res){
+app.get("/login", function(req,res){
 
-res.json({path:__dirname + "login/index.html"});
+res.json({path: __dirname + "login/index.html"});
 
 
 
