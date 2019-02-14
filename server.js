@@ -24,7 +24,7 @@ app.get("/", function(req, res){
 })
 
 
-app.get("/login", function(req,res){
+app.get("/logi", function(req, res){
  res.send('GET request to the homepage')
 // res.json({path: __dirname + "login/index.html"});
 
