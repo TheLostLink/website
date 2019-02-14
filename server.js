@@ -26,7 +26,7 @@ app.get("/", function(req, res){
 
 app.post("/login", function(req,res){
 
-res.sendFile(__dirname + './public/login/index.html')
+res.json({"path": __dirname + './public/login/index.html'})
 
 
 
