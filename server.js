@@ -26,7 +26,7 @@ app.get("/", function(req, res){
 
 app.get("/login", function(req,res){
 
-res.sendFile(__dirname + 'login/index.html')
+res.sendFile(__dirname + './public/login/index.html')
 
 
 
