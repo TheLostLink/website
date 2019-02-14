@@ -20,17 +20,17 @@ app.use(express.static(__dirname + "/public"));
 
 //routes
 app.get("/", function(req, res){
-	res.json({path: __dirname + "login/index.html"});
+	res.render("index");
 })
 
 
 app.get("/login", function(req,res){
+ res.send('GET request to the homepage')
+// res.json({path: __dirname + "login/index.html"});
 
-res.json({path: __dirname + "login/index.html"});
 
 
-
-} )
+})
 
 app.listen(port, function(){
 	console.log("app running");
